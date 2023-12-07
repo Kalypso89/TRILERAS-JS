@@ -3,6 +3,7 @@
 }
 
 .subtitle,
-.game-instruction {
+.game-instruction,
+.round-txt {
     font-family: 'Michroma';
 }
