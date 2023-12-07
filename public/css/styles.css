@@ -18,3 +18,9 @@ body .text-lg{
 
     margin-top: 100px;
 }
+
+/*ESTILOS PARA EL FORMULARIO*/
+
+#start__form:valid button {
+    background-color: #239519;
+}
