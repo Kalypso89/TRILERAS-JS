@@ -1,76 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trileras Game</title>
-    <link rel="shortcut icon" href="./src/assets/icons/LOGO.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icons/LOGO.svg"
+      type="image/x-icon"
+    />
     <!--Script de Tailwind-->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> 
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <!--Meter fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Michroma&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Michroma&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
     />
     <!--Hojas de Estilo-->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/game.css" />
+  </head>
 
-</head>
-
-<body>
-    <div class="">
-        <p class="flex items-center justify-center mx-auto mt-2 mb-14 text-xs md:text-md lg:text-2xl">
-        You have 5 rounds of 30 seconds each.
-        If you win 3 times, you win the game!
-        If you lose 3 times, the game is over!
+  <body>
+    <div
+      class="bg-no-repeat bg-center bg-cover h-screen md:bg-center-contain lg:bg-center-contain xl:bg-center-contain 2xl:bg-center-contain"
+      style="background-image: url(/src/assets/img/background\ image\ GAME.jpg)"
+    >
+      <div class="flex flex-col">
+        <p
+          class="game-instruction flex items-center justify-center mx-auto mb-14 lg:mt-32 mt-36 text-center text-sm md:text-base lg:text-xl xl:text-xl"
+        >
+          You have 5 rounds of 30 seconds each.<br />
+          If you win 3 times, you win the game!<br />
+          If you lose 3 times, the game is over!
         </p>
-    </div>
-    <!--Labels-->
-    <div class="flex items-center justify-center space-x-6 mt-4 mr-4 mb-12 ml-6">
-        
-            <div>
-                <p class="flex items-center justify-center">WIN</p>
-                <input class="h-10 w-12 rounded-lg border-emerald-500 indent-4 text-emerald-900 shadow-lg focus:outline-none focus:ring focus:ring-emerald-600" type="text" placeholder="" />
-            </div>
-            <div>
-                <p class="flex items-center justify-center">ROUND</p>
-                <input class="h-20 w-24  rounded-lg border-emerald-500 indent-4 text-emerald-900 shadow-lg focus:outline-none focus:ring focus:ring-emerald-600" type="text" placeholder="" />
-            </div>
-            <div>
-                <p class="flex items-center justify-center">LOSS</p>
-                <input class="h-10 w-12  rounded-lg border-emerald-500 indent-4 text-emerald-900 shadow-lg focus:outline-none focus:ring focus:ring-emerald-600" type="text" placeholder="" />
-            </div>
-        
-    </div>
-
-    <!--Vasos-->
-    <div class=" flex flex-row items-center justify-center w-auto h-1/2">
-        <img class="w-24 h-24" src="../../src/assets/img/GLASS 1.svg " alt="image description">
-        <img class="w-24 h-24" src="../../src/assets/img/GLASS 2.svg " alt="image description">
-        <img class="w-24 h-24" src="../../src/assets/img/GLASS 3.svg " alt="image description">
-
-    </div>
-    <!--BOlita-->
-
-    <div class=" flex items-center justify-center">
-        <img class="w-12 h-12" src="../../src/assets/img/BALL.svg " alt="image description">
-    </div>
-    <div class="flex items-center justify-center ">
-        <button class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-5xl lg:text-6xl lg:text-7xl"
-        >PLAY
+      </div>
+      <div
+        class="flex items-center justify-center space-x-6 mt-4 mr-4 mb-12 ml-6"
+      >
+        <div>
+          <p class="flex items-center justify-center">WIN</p>
+        </div>
+        <div>
+          <p class="flex items-center justify-center">ROUND</p>
+        </div>
+        <div>
+          <p class="flex items-center justify-center">LOSS</p>
+        </div>
+      </div>
+      <div class="flex flex-row items-center justify-center w-auto h-1/2">
+        <img
+          class="w-24 h-24"
+          src="../../src/assets/img/GLASS 1.svg "
+          alt="image description"
+        />
+        <img
+          class="w-24 h-24"
+          src="../../src/assets/img/GLASS 2.svg "
+          alt="image description"
+        />
+        <img
+          class="w-24 h-24"
+          src="../../src/assets/img/GLASS 3.svg "
+          alt="image description"
+        />
+      </div>
+      <div class="flex items-center justify-center">
+        <img
+          class="w-12 h-12"
+          src="../../src/assets/img/BALL.svg "
+          alt="image description"
+        />
+      </div>
+      <div class="flex items-center justify-center">
+        <button
+          class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-5xl lg:text-6xl lg:text-7xl"
+        >
+          PLAY
         </button>
-    </div>
-
-    <footer class="mt-8">
+      </div>
+      <footer class="mt-8">
         <p class="text-xs text-gray-800 flex items-center justify-center">
-        Copyright © 2023 Trileras - All rights reserved
+          Copyright © 2023 Trileras - All rights reserved
         </p>
-    </footer>
-
-</body>
+      </footer>
+    </div>
+  </body>
 </html>

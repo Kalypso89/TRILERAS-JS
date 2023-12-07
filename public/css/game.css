@@ -1,26 +1,8 @@
-
-body {
-    background-image: url("../../src/assets/img/background\ image\ GAME.jpg");
-
-    
-}
-
 .play-btn{
-    
     font-family: 'Irish Grover';
-    font-style: normal;
-    font-weight: 400;
-
-    /* background-color: #532CA5; */
-}
-body .text-lg{
-
-    margin-top: 20px;
 }
 
-
-
-
-.subtitle {
+.subtitle,
+.game-instruction {
     font-family: 'Michroma';
 }
