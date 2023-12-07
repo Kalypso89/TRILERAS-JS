@@ -1,4 +1,10 @@
 
+body {
+    background-image: url("../../src/assets/img/background\ image\ GAME.jpg");
+
+    
+}
+
 .play-btn{
     
     font-family: 'Irish Grover';
@@ -11,6 +17,9 @@ body .text-lg{
 
     margin-top: 20px;
 }
+
+
+
 
 .subtitle {
     font-family: 'Michroma';
