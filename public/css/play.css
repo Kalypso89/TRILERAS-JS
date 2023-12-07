@@ -7,7 +7,10 @@
 
     /* background-color: #532CA5; */
 }
+body .text-lg{
 
+    margin-top: 20px;
+}
 
 .subtitle {
     font-family: 'Michroma';
