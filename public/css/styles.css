@@ -1,5 +1,20 @@
-h1 {
+h1,
+.start-btn {
     font-family: 'Irish Grover';
     font-style: normal;
     font-weight: 400;
+}
+
+.subtitle,
+.start-subtitle {
+    font-family: 'Michroma';
+}
+
+.text-lg{
+    font-family: 'Roboto';
+
+}
+body .text-lg{
+
+    margin-top: 100px;
 }
