@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trileras</title>
-    <link rel="shortcut icon" href="./src/assets/icons/LOGO.svg" type="image/x-icon">
-    <!--Script de Tailwind-->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> 
-    <!--Meter fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jockey+One&family=Roboto&family=Rubik+Dirt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/styles.css">
-</head>
-<body class="bg-cover-no-repeat bg-center" style="background-image: url(./src/assets/img/background\ image\ HOME.jpg)">
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icons/LOGO.svg"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Michroma&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <script src="/public/js/main.js" type="module"></script>
+  </head>
+
+  <body
+    class="bg-cover-no-repeat bg-right flex flex-col items-center h-full"
+    style="background-image: url(./src/assets/img/background\ image\ HOME.jpg)"
+  >
     <header>
-        <h1>TRILERAS</h1>
+      <h1 class="text-4xl md:text-5xl lg:text-5xl xl:text-5xl mx-auto mt-20">
+        TRILERAS
+      </h1>
     </header>
 
     <main>
-        <p id="">Guess where the ball is</p>
+      <p
+        class="subtitle mx-auto mt-4 md:ml-6 mb-14 text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+      >
+        Guess where the ball is
+      </p>
 
+      <img
+        src="./src/assets/img/LOGO.svg"
+        alt="Three cups and a ball"
+        class="w-64 md:w-96 lg:w-128 mx-auto"
+      />
 
-        <img src="./src/assets/img/LOGO.svg" alt="Three cups and a ball">
+      <p
+        class="start-subtitle ml-14 mt-14 mb-2 md:ml-20 lg:ml-24 xl:ml-28 text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+      >
+        Press START
+      </p>
 
-        <p id="">Press START</p>
-
-        <form id="start__form" method="dialog">
-            <input name="player" placeholder="INSERT YOUR NAME">
-            <button>START</button>
-        </form>
-        
+      <form id="start__form" method="dialog" class="flex flex-col items-center">
+        <input
+          name="player"
+          placeholder="INSERT YOUR NAME"
+          required 
+          class="w-52 md:w-56 lg:w-64 xl:w-80 border-none rounded-2xl text-center text-sm md:text-base lg:text-lg xl:text-xl"
+        /> <!--required-->
+        <button
+          class="start-btn bg-gray-400 w-52 h-20 md:w-60 lg:w-64 rounded-2xl mt-6 text-slate-50 text-4xl md:text-4xl lg:text-4xl xl:text-5xl"
+        >
+          START
+        </button>
+      </form>
     </main>
 
-    <footer>
-        <p>Copyright © 2023 Trileras - All rights reserved</p>
+    <footer class="mt-8">
+      <p class="text-xs text-gray-800">
+        Copyright © 2023 Trileras - All rights reserved
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
