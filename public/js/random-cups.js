@@ -1,0 +1,1 @@
+let cups = document.querySelectorAll
