@@ -4,6 +4,8 @@
 
 .subtitle,
 .game-instruction,
-.round-txt {
+.round-txt,
+.counter-numbers {
     font-family: 'Michroma';
 }
+
