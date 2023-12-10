@@ -2,6 +2,26 @@
     margin: 0;
 }
 
+body .beforePlaying,
+body .movingCups, 
+body .pickingCup, 
+body .winningRound,
+body .losingRound,
+body .winningGame,
+body .losingGame{
+    display: none;
+}
+
+body.beforePlaying .beforePlaying,
+body.movingCups .movingCups, 
+body.pickingCup .pickingCup, 
+body.winningRound .winningRound,
+body.losingRound .losingRound,
+body.winningGame .winningGame,
+body.losingGame .losingGame{
+    display: block;
+}
+
 .play-btn{
     font-family: 'Irish Grover';
     background-color: #532CA5; /*AÑADIR COLOR CORRECTO AL BOTÓN PLAY*/
