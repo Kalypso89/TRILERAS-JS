@@ -1,11 +1,7 @@
-// Guardar el nombre del player
-//Ir a la página de game con el botón
+// CAMBIAR EN LO DE LAS CHICAS PORQUE NO HACE FALTA EL DOM CONTENT LOADED
+// CAMBIOS DE NOMBRE DE ARCHIVOS INDEX.JS, GAME.JS
 
-document.addEventListener("DOMContentLoaded", main);
-
-function main () {
-    document.getElementById("start__form").addEventListener("submit",submitForm);
-};
+document.getElementById("start__form").addEventListener("submit",submitForm);
 
 function submitForm (event) { //handler del evento cuando se envía el formulario
     event.preventDefault();
