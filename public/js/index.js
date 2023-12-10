@@ -1,7 +1,7 @@
 // CAMBIAR EN LO DE LAS CHICAS PORQUE NO HACE FALTA EL DOM CONTENT LOADED
 // CAMBIOS DE NOMBRE DE ARCHIVOS INDEX.JS, GAME.JS
 
-document.getElementById("start__form").addEventListener("submit",submitForm);
+document.getElementById("start-form").addEventListener("submit",submitForm); //CHANGE id start-form
 
 function submitForm (event) { //handler del evento cuando se envía el formulario
     event.preventDefault();
