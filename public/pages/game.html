@@ -22,20 +22,56 @@
     <link rel="stylesheet" href="../css/game.css" />
     <script src="/public/js/game.js" type="module"></script> <!--AÑADIDO SCRIPT-->
   </head>
-
-  <body> <!--PONER MÍNIMO DE PANTALLA-->
+<!--PONER CLASES A LO QUE APARECE Y DESAPARECE: body, textos y botones-->
+<!--FALTA ELIMINAR .game-instruction (es lo mismo que beforePlaying)-->
+  <body class="beforePlaying"> 
     <div
       class="bg-no-repeat bg-center bg-[length:100%_100%] min-h-screen"
-      style="background-image: url(/src/assets/img/background\ image\ GAME.jpg)">
+      style="background-image: url(/src/assets/img/background\ image\ GAME.jpg)"> <!--PONER MÍNIMO DE PANTALLA--><!--AL PONERLO COMO CLASE DE TAILWIND NO FUNCIONA-->
+      <div class="winningRound losingRound winningGame losingGame flex flex-col">
+        <p id="player-name"><!--Aquí se va a meter el nombre del jugador--></p>
+        <p class="winningRound winningGame">
+          you've won!
+        </p>
+        <p class="losingRound losingGame">
+          you've lost!
+        </p>
+        <p class="winningRound losingRound">
+          Press to continue the game
+        </p>
+        <p class="winningGame losingGame">
+          Try another match
+        </p>
+        <button class="winningRound losingRound">
+          Next round
+        </button>
+        <button class="winningGame losingGame">
+          Start new game
+        </button>
+
+      </div>
+
       <div class="flex flex-col">
         <p
-          class="game-instruction flex items-center justify-center mx-auto mb-2 mt-36 lg:mt-44 text-center text-sm md:text-base lg:text-2xl xl:text-3xl"
+          class="beforePlaying game-instruction flex items-center justify-center mx-auto mb-2 mt-36 lg:mt-44 text-center text-sm md:text-base lg:text-2xl xl:text-3xl"
         >
           You have 5 rounds of 30 seconds each.<br />
           If you win 3 times, you win the game!<br />
           If you lose 3 times, the game is over!
         </p>
+        <p
+          class="movingCups game-instruction flex items-center justify-center mx-auto mb-2 mt-36 lg:mt-44 text-center text-sm md:text-base lg:text-2xl xl:text-3xl"
+        >Stay focused on the ball
+        </p>
+        <p
+        class="pickingCup game-instruction flex items-center justify-center mx-auto mb-2 mt-36 lg:mt-44 text-center text-sm md:text-base lg:text-2xl xl:text-3xl"
+      >Pick a cup
+      </p>
       </div>
+      <div class="pickingCup flex flex-col items-center justify-center">
+        <p>00:<span>30</span></p>
+      </div>
+      
       <div class="flex items-end justify-center space-x-6 mx-4 my-4">
         <div class="text-center space-y-1">
           <p class="text-sm lg:text-lg xl:text-2xl">WIN</p>
@@ -93,7 +129,7 @@
   
       <div class="flex items-center justify-center">
         <button
-          class="play-btn w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-4xl md:w-60 h-20 lg:text-6xl lg:w-80 lg:h-28"
+          class="beforePlaying play-btn w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-4xl md:w-60 h-20 lg:text-6xl lg:w-80 lg:h-28"
         ><!--QUITAR COLOR GRIS AL BOTÓN PLAY-->
           PLAY
         </button>

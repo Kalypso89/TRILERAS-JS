@@ -22,6 +22,25 @@ body.losingGame .losingGame{
     display: block;
 }
 
+/*elemento que tenga todas las clases de forma simultánea*/
+.winningRound.losingRound.winningGame.losingGame {
+    background-color: #532CA5;
+    margin: 0 auto;
+    width: 335px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.winningRound.losingRound.winningGame.losingGame button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #239519;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .play-btn{
     font-family: 'Irish Grover';
     background-color: #532CA5; /*AÑADIR COLOR CORRECTO AL BOTÓN PLAY*/
