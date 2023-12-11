@@ -24,6 +24,6 @@ body .text-lg{
     margin-top: 100px;
 }
 
-#start__form:valid button {
+#start-form:valid button {
     background-color: #239519;
 }
