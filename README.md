@@ -22,16 +22,16 @@ A priori los módulos parece que son los siguientes
 * play
 * hideBall
 * moveCups
-* stopCups
-* pickCups
+* stopCups >>> se paran solos con la función anterior
+* pickCup
 
 ### Play
 
 >>function play()
--cambia el texto de instrucción
+-cambia el texto de instrucción y desaparece el botón de play
 -se esconde la bola en el vaso central
 -se empiezan a mover los vasos
--desaparece el botón de play
+
 
 Al empezar una ronda:
 
@@ -81,9 +81,9 @@ Cuando se termina de barajar:
 1. aparece el timer
 1. empieza en el timer la cuenta atrás
 
-### pickCups
+### pickCup
 
->>function pickCups()
+>>function pickCup()
 -comprobar si elige el vaso correcto o no
 *si elige el correcto aparece la pantalla win-round
 *si no elige el correcto aparece la pantalla lose-round
@@ -124,7 +124,7 @@ function showBall()
 function animateButton()
 -que se encoja y se contraiga el botón, sea el de next round o el de start game??
 
-function CheckRounds()
+function CheckRounds() >>>NO HACE FALTA
 * si quedan:
     - botón de next round
     - animación de movimiento en next round
