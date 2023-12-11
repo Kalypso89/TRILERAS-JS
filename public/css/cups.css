@@ -1,0 +1,46 @@
+#cups-container {
+    position: relative;
+    top: 30px;
+    width: 279px;
+    height: 140px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.cup {
+    position: absolute;
+    height: 99px;
+    width: 82px;
+    transition: left 0.5s;
+}
+
+.left {
+    left: 0;
+}
+
+.middle {
+    left: calc((279px - 82px)/2);
+}
+
+.right {
+    left: calc((279px - 82px))
+}
+
+#ball {
+    position: absolute;
+    height: 30px;
+    left: calc((82px - 30px)/2);
+    z-index: 0;
+}
+
+.cup > img:first-child{
+    z-index: 1;
+    position: relative;
+    top: 0;
+    transition: top linear 1s;
+}
+
+.down > img:first-child {
+    top: 33px;
+
+}
