@@ -53,3 +53,13 @@ body.losingGame .losingGame{
     font-family: 'Michroma';
 }
 
+#timer {
+    background-color: #D20606; 
+    color: #fff;
+    margin: 0 auto;
+    padding: 5px;
+    width: 117px;
+    border-radius: 5px;
+    text-align: center;
+
+}
